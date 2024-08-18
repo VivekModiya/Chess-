@@ -5,7 +5,9 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.23.0"
+    "react-router-dom": "^6.23.0",
+    "clsx": ">= 1.2.1 < 2",
+    "zustand": "5.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
@@ -24,6 +26,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "prettier": "prettier --log-level error --config \"client/*/src/**/*.{md,js,jsx,ts,tsx,json}\" --write",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
